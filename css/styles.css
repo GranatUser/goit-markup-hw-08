@@ -230,3 +230,7 @@ body {
     letter-spacing: 2.3;
     color: var(--addressColorHeader);
 }
+
+.decoration-logo>.correct-logo {
+    color: var(--h1Color);
+}
