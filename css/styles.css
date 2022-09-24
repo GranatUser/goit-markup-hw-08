@@ -8,6 +8,7 @@
     --addressColorFooter: rgba(255, 255, 255, 0.6);
     --calmButton: #F5F4FA;
     --backgroundPrinciples: #F5F5F5;
+    --switchMainButton: #188CE8;
 }
 
 body {
@@ -18,16 +19,16 @@ body {
 
 .link {
     text-decoration: none;
-    font-style: normal;
 }
 
 .list {
     list-style: none;
 }
 
-.link.logo {
+.logo {
     font-family: 'Raleway';
     font-weight: 700;
+    text-decoration: none;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
@@ -47,20 +48,17 @@ body {
 
 }
 
-.site-nav .link {
+.site-nav-decoration {
     color: var(--mainColor);
 }
 
-.auth-nav .link {
+.auth-nav-decoration {
     color: var(--addressColorHeader);
 }
 
-.site-nav .link:focus,
-.site-nav .link:hover,
-.auth-nav .link:focus,
-.auth-nav .link:hover,
-.link-bot.link:focus,
-.link-bot.link:hover {
+
+.link:focus,
+.link:hover {
     color: var(--switchColor);
 }
 
@@ -84,11 +82,17 @@ body {
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
-    background-color: var(--calmButton);
-    color: var(--mainColor);
+    background-color: var(--switchColor);
+    color: var(--whiteColor);
     border: none;
     border-radius: 4px;
     font-family: inherit;
+}
+
+.main-button:focus,
+.main-button:hover {
+    background-color: var(--switchMainButton);
+    cursor: pointer;
 }
 
 .button-action:hover,
@@ -110,7 +114,7 @@ body {
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--addressColorHeader);
-    font-weight: 400;
+
 }
 
 .second-title {
@@ -129,11 +133,11 @@ body {
 }
 
 .occupation {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+    color: var(--addressColorHeader);
 }
 
 .section-gray {
@@ -144,12 +148,12 @@ body {
     background-color: var(--h1BackgroundColor);
 }
 
-.logo.part-color {
+.part-color {
     color: var(--whiteColor);
 }
 
 .auth-bot {
-    font-weight: 400;
+
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -157,6 +161,7 @@ body {
 
 .link-bot {
     color: var(--addressColorFooter);
+    font-style: normal;
 }
 
 .link-bot-swap-color {
@@ -164,7 +169,7 @@ body {
 }
 
 .second-title-portfolio {
-    font-weight: 700;
+
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -172,7 +177,6 @@ body {
 
 .text-portfolio {
     font-size: 16px;
-    font-weight: 400;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--addressColorHeader);
