@@ -120,8 +120,7 @@ body {
 .hero {
     color: var(--whiteColor);
     background-color: var(--h1BackgroundColor);
-    text-align: center;
-    padding: 200px 0;
+
 }
 
 .hero-title {
@@ -302,14 +301,24 @@ body {
 
 
 
-.section {
+.section:nth-child(n+3) {
     padding-top: 94px;
     padding-bottom: 94px;
+
 }
 
-
-.section-dont-standart {
+.section:nth-child(2) {
     padding-top: 94px;
+}
+
+.section:first-child {
+    text-align: center;
+    padding: 200px 0;
+}
+
+.section:only-child {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .footer-address-margin {
