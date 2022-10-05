@@ -49,15 +49,17 @@
     </header>
 
     <main>
-      <section class="section hero">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="main-button" type="button">Замовити послугу</button>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="main-button" type="button">Замовити послугу</button>
+        </div>
       </section>
 
-      <section class="section">
+      <section class="section-principles">
         <div class="container">
           <!--Цей заголовок буде приховано за допомогою CSS -->
-          <h2 hidden>Наші принципи</h2>
+          <h2 class="visually-hidden">Наші принципи</h2>
           <ul class="list flex-container">
             <li>
               <h3 class="third-title">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -90,7 +92,6 @@
           <ul class="list flex-container">
             <li>
               <img
-                class="img-no-gap"
                 src="./images/typing_keyboard.jpg"
                 alt="Руки друкують на клавіатурі"
                 width="370"
@@ -99,7 +100,6 @@
             </li>
             <li>
               <img
-                class="img-no-gap"
                 src="./images/smartphone.jpg"
                 alt="Людина тримає телефон"
                 width="370"
@@ -107,24 +107,17 @@
               />
             </li>
             <li>
-              <img
-                class="img-no-gap"
-                src="./images/tablet.jpg"
-                alt="Людина тримає планшет"
-                width="370"
-                height="294"
-              />
+              <img src="./images/tablet.jpg" alt="Людина тримає планшет" width="370" height="294" />
             </li>
           </ul>
         </div>
       </section>
-      <section class="section-gray section">
+      <section class="section-gray">
         <div class="container">
           <h2 class="second-title">Наша команда</h2>
           <ul class="list flex-container">
             <li class="card">
               <img
-                class="img-no-gap"
                 src="./images/successfulMan1.jpg"
                 alt="Успішний чоловік"
                 width="270"
@@ -137,7 +130,6 @@
             </li>
             <li class="card">
               <img
-                class="img-no-gap"
                 src="./images/successfulWoman.jpg"
                 alt="Успішна жінка"
                 width="270"
@@ -150,7 +142,6 @@
             </li>
             <li class="card">
               <img
-                class="img-no-gap"
                 src="./images/successfulMan2.jpg"
                 alt="Успішний чоловік"
                 width="270"
@@ -163,7 +154,6 @@
             </li>
             <li class="card">
               <img
-                class="img-no-gap"
                 src="./images/successfulMan3.jpg"
                 alt="Успішний чоловік"
                 width="270"
@@ -179,8 +169,8 @@
       </section>
     </main>
 
-    <footer class="bot-background">
-      <div class="container footer-padding-content">
+    <footer class="footer">
+      <div class="container">
         <a class="logo part-color" href="./index.html" lang="en"
           ><span class="part-logo">Web</span>Studio</a
         >

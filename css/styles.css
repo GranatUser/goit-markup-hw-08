@@ -14,16 +14,6 @@
 
 }
 
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-    box-sizing: inherit;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--mainColor);
@@ -58,7 +48,6 @@ body {
 .border-header {
     display: flex;
 
-    border-bottom: 1px solid var(--headerBorder);
 }
 
 .site-nav,
@@ -118,10 +107,13 @@ body {
 }
 
 .hero {
+    text-align: center;
+    padding: 200px 0;
     color: var(--whiteColor);
     background-color: var(--h1BackgroundColor);
 
 }
+
 
 .hero-title {
     width: 696px;
@@ -141,7 +133,6 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    text-align: center;
     letter-spacing: 0.06em;
     background-color: var(--switchColor);
     color: var(--whiteColor);
@@ -150,8 +141,8 @@ body {
     font-family: inherit;
     display: inline-block;
     width: 216px;
-    height: 50px;
-    padding: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 }
@@ -219,10 +210,15 @@ body {
 }
 
 .section-gray {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
     background-color: var(--calmButton);
 }
 
-.bot-background {
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--h1BackgroundColor);
 }
 
@@ -283,6 +279,7 @@ body {
 
 .page-header {
     background-color: var(--whiteColor);
+    border-bottom: 1px solid var(--headerBorder);
 }
 
 .container {
@@ -301,24 +298,27 @@ body {
 
 
 
-.section:nth-child(n+3) {
+.section {
     padding-top: 94px;
     padding-bottom: 94px;
 
 }
 
-.section:nth-child(2) {
+.section-principles {
     padding-top: 94px;
 }
 
-.section:first-child {
-    text-align: center;
-    padding: 200px 0;
-}
-
-.section:only-child {
-    padding-top: 94px;
-    padding-bottom: 94px;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .footer-address-margin {
@@ -329,10 +329,7 @@ body {
     margin-bottom: 0;
 }
 
-.footer-padding-content {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+
 
 .card {
     width: 270px;
@@ -387,6 +384,9 @@ body {
     flex-wrap: wrap;
 }
 
-.img-no-gap {
+
+img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
