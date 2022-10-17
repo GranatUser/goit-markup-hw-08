@@ -343,13 +343,11 @@ body {
     overflow: hidden;
 }
 
-.footer-address-margin {
+.footer-address-margin:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.footer-address-margin:last-child {
-    margin-bottom: 0;
-}
+
 
 
 
@@ -452,6 +450,7 @@ img {
     border: 1px solid var(--greyCloseFotter);
     border-radius: 4px;
     fill: var(--greyCloseFotter)
+    
 }
 
 .constant-client:hover,
@@ -463,8 +462,8 @@ img {
 
 .flex-container-social {
     display: flex;
-    padding-left: 32px;
-    padding-right: 32px;
+   justify-content: center;
+   column-gap: 10px;
 }
 
 .social-link {
@@ -477,10 +476,6 @@ img {
     background-color: transparent;
     fill: var(--greyCloseFotter);
 
-}
-
-.social-link-margin:not(:last-child) {
-    margin-right: 10px;
 }
 
 .social-link:hover,
@@ -525,6 +520,7 @@ img {
 
 .block-svg-icon{
     display: block;
+   
 }
 .footer-div-margin{
     margin-right: 70px;
