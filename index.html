@@ -28,10 +28,10 @@
 
           <ul class="site-nav list">
             <li class="nav-li-magin">
-              <a class="link site-nav-decoration" href="./index.html">Студія</a>
+              <a class="link site-nav-decoration nav-line" href="./index.html">Студія</a>
             </li>
             <li class="nav-li-magin">
-              <a class="link site-nav-decoration" href="./portfolio.html">Портфоліо</a>
+              <a class="link site-nav-decoration"  href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="nav-li-magin"><a class="link site-nav-decoration" href="">Контакти</a></li>
           </ul>
@@ -60,7 +60,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="main-button" type="button">Замовити послугу</button>
+          <button data-modal-open class="main-button" type="button">Замовити послугу</button>
         </div>
       </section>
 
@@ -118,24 +118,34 @@
         <div class="container">
           <h2 class="second-title">Чим ми займаємося</h2>
           <ul class="list flex-container">
-            <li>
+            <li class="our-work">
               <img
                 src="./images/typing_keyboard.jpg"
                 alt="Руки друкують на клавіатурі"
                 width="370"
                 height="294"
               />
+              <div class="our-work-block">
+                <h3 class="our-work-title">Десктопні додатки</h3>
+              </div>
+
             </li>
-            <li>
+            <li class="our-work">
               <img
                 src="./images/smartphone.jpg"
                 alt="Людина тримає телефон"
                 width="370"
                 height="294"
               />
+              <div class="our-work-block">
+                <h3 class="our-work-title">Мобільні додатки</h3>
+              </div>
             </li>
-            <li>
+            <li class="our-work">
               <img src="./images/tablet.jpg" alt="Людина тримає планшет" width="370" height="294" />
+              <div class="our-work-block">
+                <h3 class="our-work-title">Дизайнерські рішення</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -427,5 +437,20 @@
         </div>
       </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal-window">
+        <button  class = "btn-close" data-modal-close>
+          <svg class="block-svg-icon" height="11" width="11">
+            <use href="./images/symbol-defs.svg#icon-close">
+            </use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+
+    <script src="./js/modal.js">
+       
+    </script>
   </body>
 </html>
