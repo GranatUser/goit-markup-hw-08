@@ -18,6 +18,9 @@
     --mainTransitionDuration:250ms;
     --mainCubicBazier:cubic-bezier(0.4, 0, 0.2, 1);
     --opacityCardColor: rgba(33, 150, 243, 0.9);
+    --borderFooterInput :rgba(255, 255, 255, 0.3);
+    --footerInputColorText:rgba(255, 255, 255, 0.6);
+    --commentColor:rgba(117, 117, 117, 0.5);
 }
 
 body {
@@ -192,7 +195,9 @@ body {
 }
 
 .main-button:focus,
-.main-button:hover {
+.main-button:hover,
+.button-footer-form-submit:focus,
+.button-footer-form-submit:hover {
     background-color: var(--switchMainButton);
     cursor: pointer;
 }
@@ -564,6 +569,7 @@ img {
     margin-bottom: 20px;
     font-size: 14px;
     font-style: normal;
+    font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -657,6 +663,9 @@ img {
     
 }
 .modal-window{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -689,5 +698,220 @@ img {
     border-radius: 50%;
     background-color: transparent;
     cursor: pointer;
+    transition-property: fill;
+    transition-duration: var(--mainTransitionDuration);
+    transition-timing-function: var(--mainCubicBazier);
+}
+.btn-close:hover,
+.btn-closr:focus{
+    fill: var(--switchColor);
+}
+/*   FORM FOOTER*/
+.footer-form{
+    display: flex;
+    margin-left: 93px;
+    align-items: flex-end;
+}
+.footer-email-input{
+    padding: 15px 0 15px 10px;
+    border: 1px solid var(--borderFooterInput);
+    border-radius: 4px;
+    height: 50px;
+    width: 358px;
+    background-color: transparent;
+    color: var(--footerInputColorText);
+    transition-property: border-color;
+    transition-duration: var(--mainTransitionDuration);
+    transition-timing-function: var(--mainCubicBazier);
+}
+.footer-email-input::placeholder{
+    color:rgba(255, 255, 255, 0.6);
+}
+.footer-email-input:focus,
+.footer-email-input:hover{
+    border-color:  var(--switchColor);
+    outline: none;
 }
 
+.button-footer-form-submit{
+    display:flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: var(--switchColor);
+    transition-property: background-color;
+    transition-duration: var(--mainTransitionDuration);
+    transition-timing-function: var(--mainCubicBazier);
+    color:var(--whiteColor);
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    line-height: 1.87;
+    fill: var(--whiteColor);
+    padding: 0;
+}
+/* MAIN-FORM*/
+.main-form{
+    width: 448px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    
+}
+.main-form-group-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    margin-bottom:  12px;
+    margin-top: 0;
+}
+.user-data{
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--addressColorHeader);
+    align-self: flex-start;
+   
+}
+.user-data-input{
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-top: 4px;
+    height: 40px;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    padding-left: 42px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    transition: border-color var(--mainTransitionDuration) var(--mainCubicBazier);
+}
+
+.local-group:not(:first-child){
+    margin-top: 10px;
+}
+.local-group{
+    position: relative;
+}
+.footer-list-width{
+    width: 100%;
+}
+.comment{
+    resize: none;
+    height: 120px;
+    padding: 12px 16px;
+    outline: none;
+}
+.comment::placeholder{
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--commentColor);
+    
+}
+.form-icon{
+    display: block;
+    position: absolute;
+    left: 21px;
+    bottom: 20px;
+    transform: translate(-50%,50%);
+    fill: var(--mainColor);
+    transition: fill var(--mainTransitionDuration) var(--mainCubicBazier);
+}
+.user-data-input:focus{
+    border-color: var(--switchColor);
+  
+}
+.user-data-input:focus +.form-icon{
+    fill:var(--switchColor);
+    
+}
+.check{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 7px;
+    color: var(--addressColorHeader);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    
+}
+.check:hover,
+.check:focus{
+    cursor: pointer;
+}
+.check-input{
+    width: 1px;
+    height: 1px;
+    margin: -1;
+    position: absolute;
+    border: 0;
+    padding: 0;
+    clip:rect(0 0 0 0);
+    overflow: hidden;
+}
+.check-input:checked+.check-box{
+    border-color: var(--switchColor) ;
+    background-color: var(--switchColor);
+}
+.local-group-license{
+    margin-top: 20px;
+}
+.link-deal{
+    color:var(--switchColor);
+}
+.check-box{
+    stroke: var(--whiteColor);
+    stroke-width: 0.2px;
+    fill: var(--whiteColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+    border: 2px solid var(--mainColor);
+    transition-property: border-color, background-color;
+    transition-duration: var(--mainTransitionDuration);
+    transition-timing-function: var(--mainCubicBazier);
+}
+.main-form-btn{
+    display: block;
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    border: none;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--whiteColor);
+    background-color: var(--switchColor);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color var(--mainTransitionDuration) var(--mainCubicBazier);
+}
+.main-form-btn:focus,
+.main-form-btn:hover{
+    background-color: var(--switchMainButton);
+    cursor: pointer;
+}

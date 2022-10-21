@@ -403,7 +403,7 @@
           </address>
         </div>
         <div>
-          <h2 class="footer-join">Приєднуйтесь</h2>
+          <p class="footer-join">Приєднуйтесь</p>
           <ul class="list flex-container-social">
             <li >
               <a class="social-link-footer" href="">
@@ -435,6 +435,23 @@
             </li>
           </ul>
         </div>
+          <form name="footer-form" class="footer-form">
+            <div class="form-group-footer" role="group" 
+            aria-labelledby="subscribe-on-us">
+              <p class="footer-join" id="subscribe-on-us">Підпишіться на розсилку</p>
+              <label for="subscribe"></label>
+              <input class="footer-email-input" type="email" 
+              name="user-email" id="subscribe" placeholder="E-mail">
+            </div>
+            <button class="button-footer-form-submit" type="submit">
+             <div > Підписатися</div>
+             <div>
+              <svg class="block-svg-icon" height="24" width="24">
+                <use href="./images/symbol-defs.svg#icon-telegram"></use>
+              </svg>
+             </div>
+            </button>
+          </form>
       </div>
     </footer>
     <div data-modal class="backdrop is-hidden">
@@ -445,12 +462,63 @@
             </use>
           </svg>
         </button>
+        <form class="main-form">
+          <div class="main-form-group" role="group" aria-labelledby="user-data" >
+            <p class="main-form-group-title" 
+            id="user-data">Залиште свої дані, ми вам передзвонимо</p>
+            <ul class="list footer-list-width">
+              <li class="local-group">
+                <label class="user-data" for="user_name">Ім'я</label>
+                <input class="user-data-input" type="text" name="user_name" id="user_name"placeholder=" ">
+                <span class="form-icon">
+                  <svg class="block-svg-icon" height="12" width="12">
+                    <use href="./images/symbol-defs.svg#icon-user-name"></use>
+                  </svg>
+                </span>
+              </li>
+              <li class="local-group">
+                <label class="user-data" for="user_tel">Телефон</label>
+                <input class="user-data-input" type="tel" name="user_tel" id="user_tel" placeholder=" ">
+                <span class="form-icon">
+                  <svg class="block-svg-icon" height="13" width="13">
+                    <use href="./images/symbol-defs.svg#icon-user-tel"></use>
+                  </svg>
+                </span>
+              </li>
+              <li class="local-group">
+                <label class="user-data" for="user_email">Пошта</label>
+                <input class="user-data-input" type="email" name="user_email" id="user_email" placeholder=" ">
+                <span class="form-icon">
+                  <svg class="block-svg-icon" height="15" width="15">
+                    <use href="./images/symbol-defs.svg#icon-user-email"></use>
+                  </svg>
+                </span>
+              </li>
+              <li class="local-group">
+                <label class="user-data" for="user_comment">Коментар</label>
+                <textarea class="user-data-input comment" name="user_comment" id="user_comment" 
+               placeholder="Введіть текст"></textarea>
+              </li>
+              <li class="local-group-license">
+              <label class="check">
+                <input class="check-input"type="checkbox">
+                <span class="check-box">
+                  <svg class="block-svg-icon" height="15" width="16">
+                    <use href="./images/symbol-defs.svg#icon-check"></use>
+                  </svg>
+                </span>
+                Погоджуюся з розсилкою та приймаю <a class="link-deal" href="">Умови договору</a>
+              </label>
+              </li>
+            </ul>
+            <button class="main-form-btn" type="submit">Відправити</button>
+          </div>
+        </form>
       </div>
     </div>
 
 
-    <script src="./js/modal.js">
-       
+    <script src="./js/modal.js">   
     </script>
   </body>
 </html>
