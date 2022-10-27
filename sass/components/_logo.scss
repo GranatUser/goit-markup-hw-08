@@ -1,0 +1,22 @@
+.logo {
+    font-family: $secondFont;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    display: inline-block;
+
+    &--black{
+        color: $logoColor;
+    }
+    &--white{
+        margin-bottom: 20px;
+        color: $whiteColor;
+    }
+    &__particles--blue{
+        color: $switchColor;
+    }
+}
+
+

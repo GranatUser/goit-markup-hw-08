@@ -1,0 +1,33 @@
+body {
+    font-family: $mainFont;
+    color: $mainColor;
+    background-color: $whiteColor;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.link {
+    text-decoration: none;
+    transition-property: color, fill;
+    transition-duration: $mainTransitionDuration;
+    transition-timing-function:$mainCubicBazier;
+    &:hover, &:focus{
+        color: $switchColor;
+        fill: $switchColor;
+    }
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.flex-configuration {
+    display: flex;
+}
+.smooth{
+    display: flex;
+    justify-content: space-between;
+}

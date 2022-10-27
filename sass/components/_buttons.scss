@@ -1,0 +1,36 @@
+.button{
+    font-weight: 700;  
+    height: 50px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    background-color: $switchColor;
+    color: $whiteColor;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition-property: background-color;
+    transition-duration: $mainTransitionDuration;
+    transition-timing-function: $mainCubicBazier;
+
+    &--main{
+        display: inline-block;
+        width: 216px;
+    }
+    &--footer{
+        display:flex;
+        column-gap: 10px; 
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        margin-left: 12px;
+        fill: $whiteColor;
+        padding: 0;
+    }
+    &:hover,
+    &:focus {
+    background-color: $switchMainButton;
+    cursor: pointer;
+}
+}
+
+

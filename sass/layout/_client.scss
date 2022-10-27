@@ -1,0 +1,28 @@
+.client {
+    display: flex;
+    column-gap: 30px;
+    &__icon {
+        height: 92px;
+        width: 170px;
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        border: 1px solid $greyCloseFotter;
+        border-radius: 4px;
+        fill: $greyCloseFotter;
+        transition-property: fill, border;
+        transition-duration: $mainTransitionDuration;
+        transition-timing-function: $mainCubicBazier;
+    
+    }
+    &__link:hover,
+    &__link:focus {
+    border: 1px solid $switchColor;
+    cursor: pointer;
+    fill: $switchColor;
+}
+}
