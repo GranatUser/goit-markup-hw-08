@@ -131,7 +131,7 @@ img {
   padding: 200px 0;
   color: #FFFFFF;
   background-color: #C4C4C4;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) 100%), url("../../images/mainBackgroundImg.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) 100%), url("../images/mainBackgroundImg.jpg");
 }
 .hero__title {
   width: 696px;
