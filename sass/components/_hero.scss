@@ -11,7 +11,7 @@
     background-color: $backgroundMainColor;
     background-image: linear-gradient(to right,
             $shadowGrad, $shadowGrad 100%),
-        url('../../images/mainBackgroundImg.jpg');
+        url('../images/mainBackgroundImg.jpg');
         &__title {
             width: 696px;
             margin: 0 auto 30px auto;
