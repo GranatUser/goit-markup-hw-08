@@ -6,17 +6,14 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     display: inline-block;
-
-    &--black{
-        color: $logoColor;
-    }
-    &--white{
-        margin-bottom: 20px;
-        color: $whiteColor;
-    }
-    &__particles--blue{
-        color: $switchColor;
-    }
+    color: $logoColor;
+}
+.logo--white{
+    margin-bottom: 20px;
+    color: $whiteColor;
+}
+.logo__particles{
+    color: $switchColor;
 }
 
 

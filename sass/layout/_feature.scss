@@ -1,0 +1,33 @@
+.feature{
+    display: flex;
+    justify-content: space-between;
+  
+}
+.feature__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 270px;
+    background-color: $calmButton;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+.feature__title{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.feature__text {
+    width: 270px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $addressColorHeader;
+
+}

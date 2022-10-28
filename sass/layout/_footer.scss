@@ -11,57 +11,53 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
+.footer-auth__item:not(:last-child) {
+    margin-bottom: 9px;
+}
 
-    &__item:not(:last-child) {
-        margin-bottom: 9px;
+.footer-auth__link{
+    color: $addressColorFooter;
+    font-style: normal;
+    
+    &--white-text {
+        color: $whiteColor;
     }
-
-    &__link{
-        color: $addressColorFooter;
-        font-style: normal;
-        
-        &--white {
-            color: $whiteColor;
-        }
-    }
-
 }
 .footer-form{
     display: flex;
     margin-left: 93px;
     align-items: flex-end;
-    &__email{
-        padding: 15px 0 15px 10px;
-        border: 1px solid $borderFooterInput;
-        border-radius: 4px;
-        height: 50px;
-        width: 358px;
-        background-color: transparent;
-        color: $footerInputColorText;
-        transition-property: border-color;
-        transition-duration: $mainTransitionDuration;
-        transition-timing-function: $mainCubicBazier;
-    }
-        &__email::placeholder{
-            color:rgba(255, 255, 255, 0.6);
-        }
-        &__email:focus,
-        &__email:hover{
-        border-color:  $switchColor;
-        outline: none;
 }
-    
+.footer-form__input-email{
+    padding: 15px 0 15px 10px;
+    border: 1px solid $borderFooterInput;
+    border-radius: 4px;
+    height: 50px;
+    width: 358px;
+    background-color: transparent;
+    color: $footerInputColorText;
+    transition-property: border-color;
+    transition-duration: $mainTransitionDuration;
+    transition-timing-function: $mainCubicBazier;
+    &::placeholder{
+        color:rgba(255, 255, 255, 0.6);
+    }
+    &:focus,
+    &:hover{
+    border-color:  $switchColor;
+    outline: none;
+}
 }
 .join{
-    &__call {
-        margin-top: 0;
-        margin-bottom: 20px;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: $whiteColor;
-    }
+     margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $whiteColor;
+    
 }

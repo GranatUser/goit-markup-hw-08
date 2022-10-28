@@ -13,30 +13,28 @@
     height: 44px;
     width: 44px;
     background-color: transparent;
-
-    &--first-animation{
-        fill: $greyCloseFotter;
-        transition-property: background-color, fill;
-        transition-duration: $mainTransitionDuration;
-        transition-timing-function: $mainCubicBazier;
-    }
-    &--first-animation:focus,
-    &--first-animation:hover {
+    fill: $greyCloseFotter;
+    transition-property: background-color, fill;
+    transition-duration: $mainTransitionDuration;
+    transition-timing-function: $mainCubicBazier;
+    
+    &:focus,
+    &:hover {
 
         background-color: $switchColor;
         fill: $whiteColor;
     }
-    &--second-animation {
+
    
-        background-color: $backgrondSocialLinkFooter;
-        fill: $whiteColor;
-        transition-property: background-color;
-        transition-duration: $mainTransitionDuration;
-        transition-timing-function: $mainCubicBazier;
-    
-    }
-    &--second-animation:hover,
-    &--second-animation:focus {
+}
+.social__link--second-animation{
+    background-color: $backgrondSocialLinkFooter;
+    fill: $whiteColor;
+    transition-property: background-color;
+    transition-duration: $mainTransitionDuration;
+    transition-timing-function: $mainCubicBazier;
+    &:hover,
+    &:focus {
         background-color: $switchColor;
     }
 }

@@ -1,9 +1,12 @@
 .activity{
-    &__our-work {
-        position: relative;
-    }
+    display: flex;
+    justify-content: space-between;
+    
 }
-.our-work {
+.activity__item {
+    position: relative;
+}
+.activity__box {
     position: absolute;
     display: flex;
     width: 100%;
@@ -16,13 +19,14 @@
     padding-bottom: 27px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8),
             rgba(47, 48, 58, 0.8) 100%);
-            &__title {
-                margin: 0;
-                padding: 0;
-                font-size: 14px;
-                line-height: 1.172;
-                letter-spacing: 0.03em;
-                text-transform: uppercase;
-                color: $whiteColor;
-            }
+           
+}
+.activity__title {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.172;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $whiteColor;
 }

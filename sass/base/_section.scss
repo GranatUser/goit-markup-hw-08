@@ -2,12 +2,11 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
-    &--grey {
+    &--grey-background {
         background-color: $calmButton;
     }
-
-}
-.section-principles {
-    padding-top: 94px;
+    &--non-padding-bot{
+        padding-bottom: 0;
+    }
 }
 

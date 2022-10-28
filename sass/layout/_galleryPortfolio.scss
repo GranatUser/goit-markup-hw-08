@@ -1,48 +1,46 @@
-.list-card-portfolio {
+.cards {
     display: flex;
     row-gap: 30px;
     justify-content: space-between;
     flex-wrap: wrap;
-
-    &__item{
-        width: 370px;
-        background: $whiteColor;
-    }
-    
 }
-.list-card-portfolio__link {
+.cards__item{
+    width: 370px;
+    background: $whiteColor;
+}
+.cards__link {
     display: block;
     text-decoration: none;
     transform: box-shadow;
     transition-duration: $mainTransitionDuration;
     transition-timing-function: $mainCubicBazier;
-
     &:hover,
     &:focus {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
             0px 4px 4px rgba(0, 0, 0, 0.06),
             1px 4px 6px rgba(0, 0, 0, 0.16);
-
-            & .overlay-inner{
-                transform: translateY(0);
-            }
     }
-    
 }
 
-.overlay{
+.cards__link:hover .cards__overlay-inner,
+.cards__link:focus .cards__overlay-inner{
+    transform: translateY(0);
+}
+
+.cards__overlay{
     position: relative;
     overflow: hidden;
-    &__txt{
-        margin: 0;
-        padding: 63px 24px;
-        font-size: 18px;
-        line-height: 1.55;
-        letter-spacing: 0.03em;
-        color: $whiteColor;
-    }
+   
 }
-.overlay-inner{
+.cards__overlay-inner-txt{
+    margin: 0;
+    padding: 63px 24px;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: $whiteColor;
+}
+.cards__overlay-inner{
     position: absolute;
     height: 100%;
     width: 100%;
@@ -53,26 +51,25 @@
     transition-timing-function: $mainCubicBazier;
 }
 
-.card-sign {
+.cards__sign {
     padding: 20px 24px;
     border-bottom: 1px solid $borderCardPortfolio;
     border-left: 1px solid $borderCardPortfolio;
     border-right: 1px solid $borderCardPortfolio;
-
-    &__title {
-        color: $mainColor;
-        margin-top: 0;
-        margin-bottom: 4px;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
-    }
-    &__txt {
-        margin-top: 0;
-        margin-bottom: 0;
-        font-size: 16px;
-        line-height: 1.88;
-        letter-spacing: 0.03em;
-        color: $addressColorHeader;
-    }
+}
+.cards__title {
+    color: $mainColor;
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.cards__txt {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: $addressColorHeader;
 }

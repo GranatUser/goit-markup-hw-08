@@ -7,8 +7,7 @@
 @import './components/_hero.scss';
 @import './components/_logo.scss';
 @import './layout/_header.scss';
-@import './layout/footer.scss';
-@import './layout/_principles.scss';
+@import './layout/_feature.scss';
 @import './components/_subtitles.scss';
 @import './layout/_activity.scss';
 @import './layout/_team.scss';
@@ -16,4 +15,5 @@
 @import './layout/_client.scss';
 @import './components/_modalWindow.scss';
 @import './components/_buttonsPortfolio.scss';
-@import './layout/_galleryPortfolio.scss';
+@import './layout/_galleryPortfolio.scss'   ;
+@import './layout/footer.scss';

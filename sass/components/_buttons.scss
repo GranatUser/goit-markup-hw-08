@@ -11,26 +11,25 @@
     transition-property: background-color;
     transition-duration: $mainTransitionDuration;
     transition-timing-function: $mainCubicBazier;
-
-    &--main{
-        display: inline-block;
-        width: 216px;
-    }
-    &--footer{
-        display:flex;
-        column-gap: 10px; 
-        justify-content: center;
-        align-items: center;
-        width: 200px;
-        margin-left: 12px;
-        fill: $whiteColor;
-        padding: 0;
-    }
     &:hover,
     &:focus {
-    background-color: $switchMainButton;
-    cursor: pointer;
+background-color: $switchMainButton;
+cursor: pointer;
 }
+}
+.footer-form__button{
+    display:flex;
+    column-gap: 10px; 
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin-left: 12px;
+    fill: $whiteColor;
+    padding: 0;
 }
 
+.hero__button{
+    display: inline-block;
+    width: 216px;
+}
 
