@@ -5,7 +5,13 @@
     flex-wrap: wrap;
 }
 .cards__item{
+    width: 450px;
+    @media screen and (min-width: 768px){
+        width: 354px;
+        }
+    @media screen and (min-width: 1200px){
     width: 370px;
+    }
     background: $whiteColor;
 }
 .cards__link {
@@ -56,6 +62,12 @@
     border-bottom: 1px solid $borderCardPortfolio;
     border-left: 1px solid $borderCardPortfolio;
     border-right: 1px solid $borderCardPortfolio;
+    &--bot-padding{
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            padding-bottom: 56px;
+        }
+        
+    }
 }
 .cards__title {
     color: $mainColor;

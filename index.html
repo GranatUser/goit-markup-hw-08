@@ -26,51 +26,64 @@
         <nav class="page-header__nav">
           <a class="logo" href="./index.html" lang="en"><span 
             class="logo__particles">Web</span>Studio</a>
-
-          <ul class="list-nav">
-            <li class="list-nav__item">
-              <a class="list-nav__link  list-nav__link--active link" href="./index.html">Студія</a>
-            </li>
-            <li class="list-nav__item">
-              <a class="list-nav__link link"  href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="list-nav__item "><a class="list-nav__link link" href="">Контакти</a></li>
-          </ul>
-        </nav>
-        <ul class="list-auth">
-          <li class="list-auth__item">
-            <a class="list-auth__link link" href="mailto:info@devstudio.com"
-              ><svg class="list-auth__icon" height="12" width="16">
-                <use href="./images/symbol-defs.svg#icon-envelope">
-                </use></svg>info@devstudio.com</a>
-          </li>
-
-          <li class="list-auth__item">
-            <a class="list-auth__link link" href="tel:+380961111111">
-              <svg class="list-auth__icon" height="16" width="10">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+            <button type="button" class="link menu-mobile-btn" data-menu-button aria-expanded="false" aria-controls="menu-container">
+              <svg width="40" height="40"  aria-label="Перемикач мобільного меню">  
+                <use class="menu-close" href="./images/symbol-defs.svg#icon-close-main-menu"></use>
+                <use class ="menu-open"href="./images/symbol-defs.svg#icon-main-menu"></use>
               </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+            </button>
+            <div class="menu-container" id="menu-container" data-menu>
+              <div class="menu-container__item">
+                <ul class="list-nav">
+                  <li class="list-nav__item">
+                    <a class="list-nav__link  list-nav__link--active link" href="./index.html">Студія</a>
+                  </li>
+                  <li class="list-nav__item">
+                    <a class="list-nav__link link"  href="./portfolio.html">Портфоліо</a>
+                  </li>
+                  <li class="list-nav__item "><a class="list-nav__link link" href="">Контакти</a></li>
+                </ul>
+                <ul class="list-auth">
+                  <li class="list-auth__item link">
+                    <a class="list-auth__link link list-auth__link--blue-phone" href="tel:+380961111111">
+                      <svg class="list-auth__icon" height="16" width="10">
+                        <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                      </svg>
+                      +38 096 111 11 11
+                    </a>
+                  </li>
+                  <li class="list-auth__item">
+                    <a class="list-auth__link  list-auth__link--grey-email" href="mailto:info@devstudio.com"
+                      ><svg class="list-auth__icon" height="12" width="16">
+                        <use href="./images/symbol-defs.svg#icon-envelope">
+                        </use></svg>info@devstudio.com</a>
+                  </li>
+                  <li class="list-auth__item">
+                    <ul class="social-link">
+                      <li class="social-link__item"><a class="social-link__link" href="">Instagram</a></li>
+                      <li class="social-link__item"><a class="social-link__link" href="">Twitter</a></li>
+                      <li class="social-link__item"><a class="social-link__link" href="">Facebook</a></li>
+                      <li class="social-link__item"><a class="social-link__link" href="">LinkedIn</a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </div>
+          </div>
       </div>
     </header>
-
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="container hero__container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button data-modal-open class="button hero__button" type="button">Замовити послугу</button>
         </div>
       </section>
-
       <section class="section section--non-padding-bot">
         <div class="container">
           <!--Цей заголовок буде приховано за допомогою CSS -->
           <h2 class="visually-hidden">Наші принципи</h2>
           <ul class="feature">
-            <li>
+            <li class="feature__item">
               <div class="feature__icon">
                 <svg  height="70" width="70">
                   <use href="./images/symbol-defs.svg#icon-antenna"></use>
@@ -81,7 +94,7 @@
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li>
+            <li class="feature__item">
               <div class="feature__icon">
                 <svg  height="70" width="70">
                   <use href="./images/symbol-defs.svg#icon-clock"></use>
@@ -92,7 +105,7 @@
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li>
+            <li class="feature__item">
               <div class="feature__icon">
                 <svg  height="70" width="70">
                   <use href="./images/symbol-defs.svg#icon-diagram"></use>
@@ -101,7 +114,7 @@
               <h3 class="feature__title">ПЛАНУВАННЯ</h3>
               <p class="feature__text">Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
-            <li>
+            <li class="feature__item">
               <div class="feature__icon">
                 <svg c height="70" width="70">
                   <use href="./images/symbol-defs.svg#icon-astronaut"></use>
@@ -115,13 +128,15 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section section--none">
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="activity">
             <li class="activity__item">
               <img
-                src="./images/typing_keyboard.jpg"
+              srcset="./images/typing_keyboard-370.jpg 1x,
+              ./images/typing_keyboard-740.jpg 2x"
+                src="./images/typing_keyboard-370.jpg"
                 alt="Руки друкують на клавіатурі"
                 width="370"
                 height="294"
@@ -129,11 +144,13 @@
               <div class="activity__box">
                 <h3 class="activity__title">Десктопні додатки</h3>
               </div>
-
+  
             </li>
             <li class="activity__item">
               <img
-                src="./images/smartphone.jpg"
+              srcset="./images/smartphone-370.jpg 1x,
+              ./images/smartphone-740.jpg 2x"
+                src="./images/smartphone-370.jpg"
                 alt="Людина тримає телефон"
                 width="370"
                 height="294"
@@ -143,7 +160,10 @@
               </div>
             </li>
             <li class="activity__item">
-              <img src="./images/tablet.jpg" alt="Людина тримає планшет" width="370" height="294" />
+              <img 
+              srcset="./images/tablet-370.jpg 1x,
+              ./images/tablet-740.jpg 2x"
+              src="./images/tablet-370.jpg" alt="Людина тримає планшет" width="370" height="294" />
               <div class="activity__box">
                 <h3 class="activity__title">Дизайнерські рішення</h3>
               </div>
@@ -157,10 +177,11 @@
           <ul class="team">
             <li class="team__item">
               <img
-                src="./images/successfulMan1.jpg"
+                srcset="./images/successfulMan1-450.jpg 1x, ./images/successfulMan1-900.jpg 2x"
+                src="./images/successfulMan1-450.jpg"
                 alt="Успішний чоловік"
-                width="270"
-                height="260"
+                height="460"
+                width="450"
               />
               <div class="team__box">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
@@ -199,10 +220,11 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/successfulWoman.jpg"
+                src="./images/successfulWoman-450.jpg"
                 alt="Успішна жінка"
-                width="270"
-                height="260"
+                srcset="./images/successfulWoman-450.jpg 1x, ./images/successfulWoman-900.jpg 2x"
+                height="460"
+                width="450"
               />
               <div class="team__box">
                 <h3 class="team__title">Ольга Рєпіна</h3>
@@ -241,10 +263,12 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/successfulMan2.jpg"
-                alt="Успішний чоловік"
-                width="270"
-                height="260"
+              srcset="./images/successfulMan2-450.jpg 1x, ./images/successfulMan2-900.jpg 2x
+              "
+              src="./images/successfulMan2-450.jpg"
+              alt="Успішний чоловік"
+              height="460"
+                width="450"
               />
               <div class="team__box">
                 <h3 class="team__title">Микола Тарасов</h3>
@@ -283,10 +307,13 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/successfulMan3.jpg"
-                alt="Успішний чоловік"
-                width="270"
-                height="260"
+              srcset="./images/successfulMan3-450.jpg 1x, ./images/successfulMan3-900.jpg 2x
+              "
+              src="./images/successfulMan3-450.jpg"
+              alt="Успішний чоловік"
+              height="460"
+                width="450"
+            
               />
               <div class="team__box">
                 <h3 class="team__title">Михайло Єрмаков</h3>
@@ -376,9 +403,9 @@
         </div>
       </section>
     </main>
-
     <footer class="footer">
       <div class="container footer__container">
+        <div class="footer-group">
         <div class="footer-content">
           <a class="logo logo--white" href="./index.html" lang="en"
             ><span class="logo__particles">Web</span>Studio</a>
@@ -435,6 +462,7 @@
             </li>
           </ul>
         </div>
+      </div>
           <form name="footer-form" class="footer-form">
             <div role="group" 
             aria-labelledby="subscribe-on-us">
@@ -452,6 +480,7 @@
           </form>
       </div>
     </footer>
+
     <div data-modal class="backdrop is-hidden">
       <div class="modal-window">
         <button  class = "btn-close" data-modal-close>
@@ -504,9 +533,11 @@
         </form>
       </div>
     </div>
-
+   
 
     <script src="./js/modal.js">   
+    </script>
+     <script src="./js/mobile-menu.js">   
     </script>
   </body>
 </html>
