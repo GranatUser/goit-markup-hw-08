@@ -47,8 +47,8 @@
     position: relative;
     width: 450px;
     height: 609px;
-    @media screen and (max-width:479px) {
-        width: 100%;
+     @media screen and (max-width:479px) {
+        width: calc(100% - 30px);  
     }
     @media screen and (max-width: 1199px){
     scale: 1;
@@ -102,7 +102,7 @@
 .main-form{
     padding: 40px;
     @media screen and (max-width:479px) {
-        padding:40px 20px 0 20px ;
+        padding:40px 15px 0 15px ;
     }
 }
 .main-form__box{
@@ -205,7 +205,9 @@
 .check{
     font-size: 12px;
     line-height: 1.71;
-   
+    @media screen and(max-width:315px){
+        font-size: 10px;
+    }
     @media screen and (min-width: 1200px){
         font-size: 14px;
         line-height: 1.71;

@@ -646,6 +646,7 @@ ul, ol {
 @media screen and (max-width: 1199px) {
   .section__title {
     font-size: 28px;
+    margin-bottom: 30px;
   }
 }
 
@@ -877,7 +878,7 @@ ul, ol {
 }
 @media screen and (max-width: 479px) {
   .modal-window {
-    width: 100%;
+    width: calc(100% - 30px);
   }
 }
 @media screen and (max-width: 1199px) {
@@ -931,7 +932,7 @@ ul, ol {
 }
 @media screen and (max-width: 479px) {
   .main-form {
-    padding: 40px 20px 0 20px;
+    padding: 40px 15px 0 15px;
   }
 }
 
@@ -1056,6 +1057,11 @@ ul, ol {
   letter-spacing: 0.03em;
   margin-top: 20px;
 }
+@media screen and (max-width: 315px) {
+  .check {
+    font-size: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .check {
     font-size: 14px;
@@ -1156,12 +1162,13 @@ ul, ol {
 
 .cards {
   display: flex;
-  row-gap: 30px;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: -15px;
 }
 
 .cards__item {
+  margin: 15px;
   background: #FFFFFF;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
