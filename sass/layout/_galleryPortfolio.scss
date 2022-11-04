@@ -5,17 +5,17 @@
     flex-wrap: wrap;
 }
 .cards__item{
-    width: 450px;
-    @media screen and (min-width: 768px){
-        width: 354px;
-        }
-    @media screen and (min-width: 1200px){
-    width: 370px;
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        flex-basis: calc((100% - 60px)/2);
     }
+    
     background: $whiteColor;
 }
 .cards__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height:100%;
     text-decoration: none;
     transform: box-shadow;
     transition-duration: $mainTransitionDuration;
@@ -45,6 +45,10 @@
     line-height: 1.55;
     letter-spacing: 0.03em;
     color: $whiteColor;
+    @media screen and (max-width:400px) {
+        padding: 10px 10px;
+        font-size: 14px;
+    }
 }
 .cards__overlay-inner{
     position: absolute;
@@ -59,15 +63,11 @@
 
 .cards__sign {
     padding: 20px 24px;
+    flex-grow: 1;
+   // padding:20px 0 20px 24px;
     border-bottom: 1px solid $borderCardPortfolio;
     border-left: 1px solid $borderCardPortfolio;
     border-right: 1px solid $borderCardPortfolio;
-    &--bot-padding{
-        @media screen and (min-width: 768px) and (max-width: 1199px){
-            padding-bottom: 56px;
-        }
-        
-    }
 }
 .cards__title {
     color: $mainColor;

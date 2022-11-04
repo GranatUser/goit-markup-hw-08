@@ -5,10 +5,10 @@
     letter-spacing: 0.02em;
     background-color: $whiteColor;
     border-bottom: 1px solid $headerBorder;
-
-    @media screen and (max-width:480px) {
+    //re
+   /* @media screen and (max-width:480px) {
         width: 480px;
-    }
+    }*/
     @media screen and (max-width:767px) {
         position: relative;
     }
@@ -36,9 +36,6 @@
    
 }
 .list-nav {
-    @media screen and (max-width: 767px) {
-        flex-grow: 1;
-    }
     @media screen and (min-width: 768px) {
         display: flex;
         margin-left: 88px;
@@ -210,13 +207,13 @@
          display: block;    
      }
      @media screen and (max-width: 767px) {
-        position: absolute;
+        position: fixed;
          display: none;
          left: 0;
          top:0;
          background-color: $whiteColor;
          width: 100%;
-         height: 796px;
+         height: 100%;
      }
  }
 
@@ -230,6 +227,7 @@
     margin-right: auto;
     padding-top: 48px;
     padding-bottom: 48px;
+    justify-content: space-between;
     }
     @media screen and (min-width: 768px) {
         
@@ -245,6 +243,10 @@
 }
 
  .list-auth__item:last-child{
+    @media screen and (max-width: 359px){
+        width: 100%;
+    }
+
     @media screen and (min-width: 768px) {
         display: none;
     }
@@ -270,13 +272,21 @@
     letter-spacing: 0.02em;
     line-height: 1.22;
     margin-top: 64px;
+    @media screen and (max-width: 359px){
+        flex-direction: column;
+        width: 100%;
+    }
    
 }
 .social-link__item:not(:last-child)::after{
-    content:" ";
-    border-left: 1px solid rgba(33, 33, 33, 0.2);
-    margin-left: 10px;
-    margin-right: 10px;
+    @media screen and (min-width: 359px){
+        content:" ";
+        border-left: 1px solid rgba(33, 33, 33, 0.2);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+   
 }
 .social-link__link{
     color:$switchColor;

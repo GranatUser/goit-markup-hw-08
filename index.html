@@ -2,7 +2,6 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <meta content="image/svg+xml" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="en">WebStudio</title>
@@ -29,7 +28,7 @@
             <button type="button" class="link menu-mobile-btn" data-menu-button aria-expanded="false" aria-controls="menu-container">
               <svg width="40" height="40"  aria-label="Перемикач мобільного меню">  
                 <use class="menu-close" href="./images/symbol-defs.svg#icon-close-main-menu"></use>
-                <use class ="menu-open"href="./images/symbol-defs.svg#icon-main-menu"></use>
+                <use class ="menu-open" href="./images/symbol-defs.svg#icon-main-menu"></use>
               </svg>
             </button>
             <div class="menu-container" id="menu-container" data-menu>
@@ -68,7 +67,8 @@
                   </li>
                 </ul>
             </div>
-          </div>
+           </div>
+          </nav>
       </div>
     </header>
     <main>
@@ -116,7 +116,7 @@
             </li>
             <li class="feature__item">
               <div class="feature__icon">
-                <svg c height="70" width="70">
+                <svg height="70" width="70">
                   <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -176,13 +176,25 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img
-                srcset="./images/successfulMan1-450.jpg 1x, ./images/successfulMan1-900.jpg 2x"
-                src="./images/successfulMan1-450.jpg"
-                alt="Успішний чоловік"
-                height="460"
-                width="450"
-              />
+              <picture>
+                <source srcset="./images/main/successfulMan1/successfulMan1Mob-450.jpg 450w, 
+                ./images/main/successfulMan1/successfulMan1Mob-900.jpg 900w"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw">
+                      <source srcset="./images/main/successfulMan1/successfulMan1Tab-354.jpg 354w, 
+                      ./images/main/successfulMan1/successfulMan1Tab-708.jpg 708w"
+                      media="(max-width: 1199px)"
+                      sizes="(max-width: 1199px) 354px, 50vw">
+                      <source srcset="./images/main/successfulMan1/successfulMan1PC-270.jpg 270w, 
+                      ./images/main/successfulMan1/successfulMan1PC-540.jpg 540w"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 270px, 25w">   
+
+                      <img
+                      src="./images/main/successfulMan1/successfulMan1PC-270.jpg"
+                      alt="Успішний чоловік"
+                    />
+              </picture>
               <div class="team__box">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__text" lang="en">Product Designer</p>
@@ -219,13 +231,25 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/successfulWoman-450.jpg"
-                alt="Успішна жінка"
-                srcset="./images/successfulWoman-450.jpg 1x, ./images/successfulWoman-900.jpg 2x"
-                height="460"
-                width="450"
-              />
+              <picture>
+                <source srcset="./images/main/successfulWoman/successfulWomanMob-450.jpg 450w, 
+                ./images/main/successfulWoman/successfulWomanMob-900.jpg 900w"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw">
+                      <source srcset="./images/main/successfulWoman/successfulWomanTab-354.jpg 354w, 
+                      ./images/main/successfulWoman/successfulWomanTab-708.jpg 708w"
+                      media="(max-width: 1199px)"
+                      sizes="(max-width: 1199px) 354px, 50vw">
+                      <source srcset="./images/main/successfulWoman/successfulWomanPC-270.jpg 270w, 
+                      ./images/main/successfulWoman/successfulWomanPC-540.jpg 540w"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 270px, 25w">   
+
+                      <img
+                      src="./images/main/successfulWoman/successfulWomanPC-270.jpg"
+                      alt="Успішна жінка"
+                    />
+              </picture>
               <div class="team__box">
                 <h3 class="team__title">Ольга Рєпіна</h3>
                 <p class="team__text" lang="en">Frontend Developer</p>
@@ -262,14 +286,25 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-              srcset="./images/successfulMan2-450.jpg 1x, ./images/successfulMan2-900.jpg 2x
-              "
-              src="./images/successfulMan2-450.jpg"
-              alt="Успішний чоловік"
-              height="460"
-                width="450"
-              />
+              <picture>
+                <source srcset="./images/main/successfulMan2/successfulMan2Mob-450.jpg 450w, 
+                ./images/main/successfulMan2/successfulMan2Mob-900.jpg 900w"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw">
+                      <source srcset="./images/main/successfulMan2/successfulMan2Tab-354.jpg 354w, 
+                      ./images/main/successfulMan2/successfulMan2Tab-708.jpg 708w"
+                      media="(max-width: 1199px)"
+                      sizes="(max-width: 1199px) 354px, 50vw">
+                      <source srcset="./images/main/successfulMan2/successfulMan2PC-270.jpg 270w, 
+                      ./images/main/successfulMan2/successfulMan2PC-540.jpg 540w"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 270px, 25w">   
+
+                      <img
+                      src="./images/main/successfulMan2/successfulMan2PC-270.jpg"
+                      alt="Успішний чоловік"
+                    />
+              </picture>
               <div class="team__box">
                 <h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__text" lang="en">Marketing</p>
@@ -306,15 +341,25 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-              srcset="./images/successfulMan3-450.jpg 1x, ./images/successfulMan3-900.jpg 2x
-              "
-              src="./images/successfulMan3-450.jpg"
-              alt="Успішний чоловік"
-              height="460"
-                width="450"
-            
-              />
+              <picture>
+                <source srcset="./images/main/successfulMan3/successfulMan3Mob-450.jpg 450w, 
+                ./images/main/successfulMan3/successfulMan3Mob-900.jpg 900w"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw">
+                      <source srcset="./images/main/successfulMan3/successfulMan3Tab-354.jpg 354w, 
+                      ./images/main/successfulMan3/successfulMan3Tab-708.jpg 708w"
+                      media="(max-width: 1199px)"
+                      sizes="(max-width: 1199px) 354px, 50vw">
+                      <source srcset="./images/main/successfulMan3/successfulMan3PC-270.jpg 270w, 
+                      ./images/main/successfulMan3/successfulMan3PC-540.jpg 540w"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 270px, 25w">   
+
+                      <img
+                      src="./images/main/successfulMan3/successfulMan3PC-270.jpg"
+                      alt="Успішний чоловік"
+                    />
+              </picture>
               <div class="team__box">
                 <h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__text" lang="en">UI Designer</p>
@@ -464,7 +509,7 @@
         </div>
       </div>
           <form name="footer-form" class="footer-form">
-            <div role="group" 
+            <div class="footer-form-container" role="group" 
             aria-labelledby="subscribe-on-us">
               <p class="join" id="subscribe-on-us">Підпишіться на розсилку</p>
               <label for="subscribe"></label>
@@ -516,11 +561,11 @@
                 </svg>
               </li>
             </ul>
-            <label for="comment"class="comment">Коментар</label>
-            <textarea id ="comment"class="comment__input" name="user_comment"
+            <label for="comment" class="comment">Коментар</label>
+            <textarea id ="comment" class="comment__input" name="user_comment"
               placeholder="Введіть текст" ></textarea>
             <label class="check">
-              <input class="check__input"type="checkbox">
+              <input class="check__input" type="checkbox">
               <span class="check__box">
                 <svg  height="15" width="16">
                   <use href="./images/symbol-defs.svg#icon-check"></use>

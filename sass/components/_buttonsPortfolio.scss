@@ -3,7 +3,13 @@
     column-gap: 8px;
     justify-content: center;
     margin-bottom: 40px;
-    @media screen and(max-width:767px){
+    @media screen and(max-width:410px){
+        justify-content: start;
+        flex-wrap: wrap;
+        row-gap: 15px;
+        width: 100%;
+    }
+    @media screen and(min-width:411px) and(max-width:767px){
         justify-content: start;
         flex-wrap: wrap;
         row-gap: 15px;

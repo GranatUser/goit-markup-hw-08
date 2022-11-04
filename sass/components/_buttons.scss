@@ -23,7 +23,9 @@ cursor: pointer;
     justify-content: center;
     align-items: center;
     width: 200px;
-    margin-left: 12px;
+    @media screen and (min-width:1200px) {
+        margin-left: 12px;
+    }
     fill: $whiteColor;
     padding: 0;
 }

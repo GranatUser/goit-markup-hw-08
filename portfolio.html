@@ -28,7 +28,7 @@
             <button type="button" class="link menu-mobile-btn" data-menu-button aria-expanded="false" aria-controls="menu-container">
               <svg width="40" height="40"  aria-label="Перемикач мобільного меню">  
                 <use class="menu-close" href="./images/symbol-defs.svg#icon-close-main-menu"></use>
-                <use class ="menu-open"href="./images/symbol-defs.svg#icon-main-menu"></use>
+                <use class ="menu-open" href="./images/symbol-defs.svg#icon-main-menu"></use>
               </svg>
             </button>
             <div class="menu-container" id="menu-container" data-menu>
@@ -68,33 +68,7 @@
                 </ul>
             </div>
           </div>
-     <!--   <ul class="list-nav">
-            <li class="list-nav__item">
-              <a class="list-nav__link  list-nav__link--active link" href="./index.html">Студія</a>
-            </li>
-            <li class="list-nav__item">
-              <a class="list-nav__link link"  href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="list-nav__item "><a class="list-nav__link link" href="">Контакти</a></li>
-          </ul>
-        </nav>
-        <ul class="list-auth">
-          <li class="list-auth__item">
-            <a class="list-auth__link link" href="mailto:info@devstudio.com"
-              ><svg class="list-auth__icon" height="12" width="16">
-                <use href="./images/symbol-defs.svg#icon-envelope">
-                </use></svg>info@devstudio.com</a>
-          </li>
-
-          <li class="list-auth__item">
-            <a class="list-auth__link link" href="tel:+380961111111">
-              <svg class="list-auth__icon" height="16" width="10">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>-->  
+          </nav>
       </div>
     </header>
 
@@ -128,11 +102,24 @@
                 <div class="cards__overlay-inner">
                   <p class="cards__overlay-inner-txt">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
-                <img src="./images/tehnoCrack-450.jpg" 
-                srcset="./images/tehnoCrack-450.jpg 1x, ./images/tehnoCrack-900.jpg 2x"
-                alt="Ноутбук" width="450" height="294" />
+                <picture>
+                  <source srcset="./images/portfolio/tehnoCrack/tehnoCrackMob-450.jpg 450w, 
+                  ./images/portfolio/tehnoCrack/tehnoCrackMob-900.jpg 900w"
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 480px) 450px, 100vw">
+                  <source srcset="./images/portfolio/tehnoCrack/tehnoCrackTab-354.jpg 354w, 
+                  ./images/portfolio/tehnoCrack/tehnoCrackTab-708.jpg 708w"
+                  media="(max-width: 1199px)"
+                  sizes="(max-width: 1199px) 354px, 50vw">
+                  <source srcset="./images/portfolio/tehnoCrack/tehnoCrackPC-370.jpg 370w, 
+                  ./images/portfolio/tehnoCrack/tehnoCrackPC-740.jpg 740w"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 370px, 33w">
+                <img src="./images/portfolio/tehnoCrack/tehnoCrackPC-370.jpg" 
+                alt="Ноутбук"/>
+              </picture>
               </div> 
-              <div class="cards__sign cards__sign--bot-padding">
+              <div class="cards__sign cards__sign--grow">
                 <h2 class="cards__title">Технокряк</h2>
                 <p class="cards__txt">Веб-сайт</p>
               </div>
@@ -144,13 +131,25 @@
                   <div class="cards__overlay-inner">
                     <p class="cards__overlay-inner-txt">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
-              <img
-                src="./images/posterNewOrleanVsGoldenStar-450.jpg"
-                srcset="./images/posterNewOrleanVsGoldenStar-450.jpg 1x, ./images/posterNewOrleanVsGoldenStar-900.jpg 2x"
-                alt="Постер гравців в баскетбол"
-                width="450"
-                height="294"
-              />
+               <picture>
+                <source srcset="./images/portfolio/posterNewOrleanVsGoldenStar/posterNewOrleanVsGoldenStarMob-450.jpg 450w, 
+                ./images/portfolio/posterNewOrleanVsGoldenStar/posterNewOrleanVsGoldenStarMob-900.jpg 900w"
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 480px) 450px, 100vw">
+                  <source srcset="./images/portfolio/posterNewOrleanVsGoldenStar/posterNewOrleanVsGoldenStarTab-354.jpg 354w, 
+                  ./images/portfolio/posterNewOrleanVsGoldenStar/posterNewOrleanVsGoldenStarTab-708.jpg 708w"
+                  media="(max-width: 1199px)"
+                  sizes="(max-width: 1199px) 354px, 50vw">
+                  <source srcset="./images/portfolio/posterNewOrleanVsGoldenStar/posterNewOrleanVsGoldenStarPC-370.jpg 370w, 
+                  ./images/portfolio/posterNewOrleanVsGoldenStar/posterNewOrleanVsGoldenStarPC-740.jpg 740w"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 370px, 33w">
+
+                  <img
+                  src="./images/portfolio/posterNewOrleanVsGoldenStar/posterNewOrleanVsGoldenStarPC-370.jpg"
+                  alt="Постер гравців в баскетбол"
+                />
+               </picture>   
                 </div>
               <div class="cards__sign">
                 <h2 class="cards__title">Постер New Orlean vs Golden Star</h2>
@@ -164,13 +163,24 @@
                   <div class="cards__overlay-inner">
                     <p class="cards__overlay-inner-txt">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
-              <img
-                src="./images/restaurantSeaFood-450.jpg"
-                srcset="./images/restaurantSeaFood-450.jpg 1x, ./images/restaurantSeaFood-900.jpg 2x"
+                  <picture>
+                  <source srcset="./images/portfolio/restaurantSeaFood/restaurantSeaFoodMob-450.jpg 450w, 
+                  ./images/portfolio/restaurantSeaFood/restaurantSeaFoodMob-900.jpg 900w"
+                    media="(max-width: 767px)"
+                    sizes="(min-width: 480px) 450px, 100vw">
+                    <source srcset="./images/portfolio/restaurantSeaFood/restaurantSeaFoodTab-354.jpg 354w, 
+                    ./images/portfolio/restaurantSeaFood/restaurantSeaFoodTab-708.jpg 708w"
+                    media="(max-width: 1199px)"
+                    sizes="(max-width: 1199px) 354px, 50vw">
+                    <source srcset="./images/portfolio/restaurantSeaFood/restaurantSeaFoodPC-370.jpg 370w, 
+                    ./images/portfolio/restaurantSeaFood/restaurantSeaFoodPC-740.jpg 740w"
+                    media="(min-width: 1200px)"
+                    sizes="(min-width: 1200px) 370px, 33w">
+                <img
+                src="./images/portfolio/restaurantSeaFood/restaurantSeaFoodPC-370.jpg"
                 alt="Логотип ресторану у вигляді риби"
-                width="450"
-                height="294"
               />
+            </picture>
                 </div>
               <div class="cards__sign">
                 <h2 class="cards__title">Ресторан <span lang="en">Seafood</span></h2>
@@ -184,9 +194,24 @@
                   <div class="cards__overlay-inner">
                     <p class="cards__overlay-inner-txt">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
-              <img src="./images/projPrime-450.jpg" 
-              srcset="./images/projPrime-450.jpg 1x, ./images/projPrime-900.jpg 2x"
-              alt="Навушники" width="450" height="294" />
+                  <picture>
+                    <source srcset="./images/portfolio/projPrime/projPrimeMob-450.jpg 450w, 
+                    ./images/portfolio/projPrime/projPrimeMob-900.jpg 900w"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw">
+                      <source srcset="./images/portfolio/projPrime/projPrimeTab-354.jpg 354w, 
+                      ./images/portfolio/projPrime/projPrimeTab-708.jpg 708w"
+                      media="(max-width: 1199px)"
+                      sizes="(max-width: 1199px) 354px, 50vw">
+                      <source srcset="./images/portfolio/projPrime/projPrimePC-370.jpg 370w, 
+                      ./images/portfolio/projPrime/projPrimePC-740.jpg 740w"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, 33w">
+
+                      <img src="./images/portfolio/projPrime/projPrimePC-370.jpg" 
+                      alt="Навушники" />
+                  </picture>
+             
                 </div>
               <div class="cards__sign">
                 <h2 class="cards__title">Проєкт <span lang="en">Prime</span></h2>
@@ -200,9 +225,23 @@
                   <div class="cards__overlay-inner">
                     <p class="cards__overlay-inner-txt">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
-              <img src="./images/projBoxes-450.jpg" 
-              srcset="./images/projBoxes-450.jpg 1x, ./images/projBoxes-900.jpg 2x"
-              alt="Коробки" width="450" height="294" />
+                  <picture>
+                    <source srcset="./images/portfolio/projBoxes/projBoxesMob-450.jpg 450w, 
+                    ./images/portfolio/projBoxes/projBoxesMob-900.jpg 900w"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw">
+                      <source srcset="./images/portfolio/projBoxes/projBoxesTab-354.jpg 354w, 
+                      ./images/portfolio/projBoxes/projBoxesTab-708.jpg 708w"
+                      media="(max-width: 1199px)"
+                      sizes="(max-width: 1199px) 354px, 50vw">
+                      <source srcset="./images/portfolio/projBoxes/projBoxesPC-370.jpg 370w, 
+                      ./images/portfolio/projBoxes/projBoxesPC-740.jpg 740w"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, 33w">
+
+                      <img src="./images/portfolio/projBoxes/projBoxesPC-370.jpg" 
+                      alt="Коробки"  />
+                  </picture>
                 </div>
               <div class="cards__sign">
                 <h2 class="cards__title">Проєкт <span lang="en">Boxes</span></h2>
@@ -216,13 +255,26 @@
                   <div class="cards__overlay-inner">
                     <p class="cards__overlay-inner-txt">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
-              <img
-                src="./images/inspirationHasNoBorders-450.jpg"
-                srcset="./images/inspirationHasNoBorders-450.jpg 1x, ./images/inspirationHasNoBorders-900.jpg 2x"
+                  <picture>
+                    <source srcset="./images/portfolio/inspirationHasNoBorders/inspirationHasNoBordersMob-450.jpg 450w, 
+                    ./images/portfolio/inspirationHasNoBorders/inspirationHasNoBordersMob-900.jpg 900w"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw">
+                      <source srcset="./images/portfolio/inspirationHasNoBorders/inspirationHasNoBordersTab-354.jpg 354w, 
+                      ./images/portfolio/inspirationHasNoBorders/inspirationHasNoBordersTab-708.jpg 708w"
+                      media="(max-width: 1199px)"
+                      sizes="(max-width: 1199px) 354px, 50vw">
+                      <source srcset="./images/portfolio/inspirationHasNoBorders/inspirationHasNoBordersPC-370.jpg 370w, 
+                      ./images/portfolio/inspirationHasNoBorders/inspirationHasNoBordersPC-740.jpg 740w"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, 33w">
+
+                      <img
+                src="./images/portfolio/inspirationHasNoBorders/inspirationHasNoBordersPC-370.jpg"
                 alt="Монітор"
-                width="450"
-                height="294"
               />
+                  </picture>
+              
                 </div>
               <div class="cards__sign">
                 <h2 class="cards__title" lang="en">Inspiration has no Borders</h2>
@@ -236,13 +288,25 @@
                   <div class="cards__overlay-inner">
                     <p class="cards__overlay-inner-txt">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
-              <img
-                src="./images/limitedEdition-450.jpg"
-                srcset="./images/limitedEdition-450.jpg 1x, ./images/limitedEdition-900.jpg 2x"
+                  <picture>
+                    <source srcset="./images/portfolio/limitedEdition/limitedEditionMob-450.jpg 450w, 
+                    ./images/portfolio/limitedEdition/limitedEditionMob-900.jpg 900w"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw">
+                      <source srcset="./images/portfolio/limitedEdition/limitedEditionTab-354.jpg 354w, 
+                      ./images/portfolio/limitedEdition/limitedEditionTab-708.jpg 708w"
+                      media="(max-width: 1199px)"
+                      sizes="(max-width: 1199px) 354px, 50vw">
+                      <source srcset="./images/portfolio/limitedEdition/limitedEditionPC-370.jpg 370w, 
+                      ./images/portfolio/limitedEdition/limitedEditionPC-740.jpg 740w"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, 33w">
+                      <img
+                src="./images/portfolio/limitedEdition/limitedEditionPC-370.jpg"
                 alt="Розгорнутий журнал"
-                width="450"
-                height="294"
               />
+                  </picture>
+              
                 </div>
               <div class="cards__sign">
                 <h2 class="cards__title">Видання <span lang="en">Edition</span></h2>
@@ -256,9 +320,22 @@
                   <div class="cards__overlay-inner">
                     <p class="cards__overlay-inner-txt">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
-              <img src="./images/projLAB-450.jpg" 
-              srcset="./images/projLAB-450.jpg 1x, ./images/projLAB-900.jpg 2x"
-              alt="Бірка" width="450" height="294" />
+                  <picture>
+                    <source srcset="./images/portfolio/projLAB/projLABMob-450.jpg 450w, 
+                    ./images/portfolio/projLAB/projLABMob-900.jpg 900w"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw">
+                      <source srcset="./images/portfolio/projLAB/projLABTab-354.jpg 354w, 
+                      ./images/portfolio/projLAB/projLABTab-708.jpg 708w"
+                      media="(max-width: 1199px)"
+                      sizes="(max-width: 1199px) 354px, 50vw">
+                      <source srcset="./images/portfolio/projLAB/projLABPC-370.jpg 370w, 
+                      ./images/portfolio/projLAB/projLABPC-740.jpg 740w"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, 33w">
+                      <img src="./images/portfolio/projLAB/projLABPC-370.jpg" 
+              alt="Бірка" />
+                  </picture>
                 </div>
               <div class="cards__sign">
                 <h2 class="cards__title">Проєкт <span lang="en">LAB</span></h2>
@@ -272,13 +349,24 @@
                   <div class="cards__overlay-inner">
                     <p class="cards__overlay-inner-txt">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
-              <img
-                src="./images/growingBusiness-450.jpg"
-                srcset="./images/growingBusiness-450.jpg 1x, ./images/growingBusiness-900.jpg 2x"
-                alt="Руки друкують на клавіатурі ноутбуку"
-                width="450"
-                height="294"
-              />
+                  <picture>
+                    <source srcset="./images/portfolio/growingBusiness/growingBusinessMob-450.jpg 450w, 
+                    ./images/portfolio/growingBusiness/growingBusinessMob-900.jpg 900w"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw">
+                      <source srcset="./images/portfolio/growingBusiness/growingBusinessTab-354.jpg 354w, 
+                      ./images/portfolio/growingBusiness/growingBusinessTab-708.jpg 708w"
+                      media="(max-width: 1199px)"
+                      sizes="(max-width: 1199px) 354px, 50vw">
+                      <source srcset="./images/portfolio/growingBusiness/growingBusinessPC-370.jpg 370w, 
+                      ./images/portfolio/growingBusiness/growingBusinessPC-740.jpg 740w"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 370px, 33w">
+                      <img
+                      src="./images/portfolio/growingBusiness/growingBusinessPC-370.jpg"
+                      alt="Руки друкують на клавіатурі ноутбуку"
+                    />
+                  </picture>
                 </div>
               <div class="cards__sign">
                 <h2 class="cards__title" lang="en">Growing Business</h2>
@@ -351,7 +439,7 @@
         </div>
       </div>
           <form name="footer-form" class="footer-form">
-            <div role="group" 
+            <div class="footer-form-container" role="group" 
             aria-labelledby="subscribe-on-us">
               <p class="join" id="subscribe-on-us">Підпишіться на розсилку</p>
               <label for="subscribe"></label>

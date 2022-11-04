@@ -5,9 +5,7 @@
     &--grey-background {
         background-color: $calmButton;
     }
-    @media screen and (max-width: 479px){
-        width: 480px;
-      }
+    //re
     @media screen and (max-width: 1199px){
         padding-top: 60px;
         padding-bottom: 60px;

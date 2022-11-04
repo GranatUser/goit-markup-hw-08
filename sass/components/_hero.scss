@@ -1,89 +1,85 @@
 .hero {
-    text-align: center;
-    margin: 0 auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 118px 0;
-    height: 400px;
-    @media screen and (min-width:0) {
-        width: 480px;
-        background-image: linear-gradient(to right,
-        $shadowGrad, $shadowGrad 100%),
-    url('../images/header-480.jpg');
-   
-    }
-    @media screen and(min-width:768px) {
-        width: 768px;
-        background-image: linear-gradient(to right,
-        $shadowGrad, $shadowGrad 100%),
-    url('../images/header2-768.jpg');
-    
-    }
-    @media screen and(min-width: 1200px){
-        padding: 200px 0;
-        height: 600px;
-       width:1200px;
-        background-image: linear-gradient(to right,
-        $shadowGrad, $shadowGrad 100%),
-    url('../images/header3-1600.jpg'); 
-    }
-    @media screen and(min-width: 1600px){
+  text-align: center;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 118px 0;
+  height: 400px;
+  @media screen and (min-width:0) {
+      background-image: linear-gradient(to right,
+      $shadowGrad, $shadowGrad 100%),
+  url('../images/header-480.jpg');
+ 
+  }
+  @media screen and(min-width:768px) {
+      background-image: linear-gradient(to right,
+      $shadowGrad, $shadowGrad 100%),
+  url('../images/header2-768.jpg');
+  
+  }
+  @media screen and(min-width: 1200px){
       padding: 200px 0;
-      height: 600px;
-      width:1600px;
+       height: 600px;
       background-image: linear-gradient(to right,
       $shadowGrad, $shadowGrad 100%),
   url('../images/header3-1600.jpg'); 
   }
+  @media screen and(min-width: 1600px){
+    padding: 200px 0;
+      height: 600px;
+      width:1600px;
+    background-image: linear-gradient(to right,
+    $shadowGrad, $shadowGrad 100%),
+url('../images/header3-1600.jpg'); 
+}
 
-   
-    color: $whiteColor;
-    background-color: $backgroundMainColor;
-   
-   
-   
-        &__title {
-            width: 360px;
-            margin: 0 auto 30px auto;
-            font-weight: 900;
-            font-size: 26px;
-            line-height: 1.61;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-            @media screen and(min-width:1200px){
-                font-size: 44px;
-                width: 696px;
-                line-height: 1.36;
-            }
-        }
+ 
+  color: $whiteColor;
+  background-color: $backgroundMainColor;
+ 
+ 
+ 
+      &__title {
+          margin: 0 auto 30px auto;
+          font-weight: 900;
+          font-size: 26px;
+          line-height: 1.61;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          @media screen and(min-width:1200px){
+              font-size: 44px;
+              width: 696px;
+              line-height: 1.36;
+          }
+      }
 }
 
 
 @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image:linear-gradient(to right,
-    $shadowGrad, $shadowGrad 100%), url('../images/header-960.jpg');
-  }
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero {
+  background-image:linear-gradient(to right,
+  $shadowGrad, $shadowGrad 100%), url('../images/header-960.jpg');
+}
 }
 @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image:linear-gradient(to right,
-    $shadowGrad, $shadowGrad 100%), url('../images/header2-1536.jpg');
-  }
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero {
+  background-image:linear-gradient(to right,
+  $shadowGrad, $shadowGrad 100%), url('../images/header2-1536.jpg');
+}
 }
 @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image:linear-gradient(to right,
-    $shadowGrad, $shadowGrad 100%), url('../images/header3-3200.jpg');
-  }
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero {
+  background-image:linear-gradient(to right,
+  $shadowGrad, $shadowGrad 100%), url('../images/header3-3200.jpg');
+}
 }
